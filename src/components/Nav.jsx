@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Nav() {
   return (
    <>
-   <div className="nav-container h-[75px] py-4 px-6 bg-[#111827] text-white font-semibold flex justify-between items-center">
+   <div className="nav-container h-[75px] py-4 px-6 bg-[#111827] text-white font-semibold flex justify-between items-center sticky  top-0 z-100">
 
     <div className="left flex gap-4">
         <img src="/logo.svg" alt="" />
