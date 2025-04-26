@@ -6,6 +6,7 @@ import Quote from './components/Quote';
 import Restaurent from './components/Restaurent';
 import Foods from './components/Foods';
 import Contact from './components/Contact';
+import RestaurantDataProvider from './contexts/RestaurantDataProvider';
 
 const router = createBrowserRouter([
   {
@@ -41,7 +42,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+    <RestaurantDataProvider>
     <RouterProvider router={router} />
+    </RestaurantDataProvider>
     </>
   )
 }
