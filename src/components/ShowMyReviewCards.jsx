@@ -3,7 +3,7 @@ import React from 'react'
 function ShowMyReviewCards({arr}) {
   return (
     <>
-    <div className="review-card-container min-h-screen px-6 py-12 columns-3 gap-8">
+    <div className="review-card-container min-h-screen px-6 py-12 columns-1 sm:columns-2 md:columns-3 gap-8">
         {
             arr.map((obj,idx)=>{
                 return <div key={idx} className="card flex flex-col gap-3 mb-8 break-inside-avoid">
