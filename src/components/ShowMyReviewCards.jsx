@@ -5,8 +5,8 @@ function ShowMyReviewCards({arr}) {
     <>
     <div className="review-card-container min-h-screen px-6 py-12 columns-3 gap-8">
         {
-            arr.map((obj)=>{
-                return <div className="card flex flex-col gap-3 mb-8 break-inside-avoid">
+            arr.map((obj,idx)=>{
+                return <div key={idx} className="card flex flex-col gap-3 mb-8 break-inside-avoid">
                 <div className="text text-gray-700 bg-sky-50 p-4 rounded-lg shadow-xl ">
                     <p>
                     {obj.text}
